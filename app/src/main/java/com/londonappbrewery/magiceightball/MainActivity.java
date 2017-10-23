@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("eightBall", "Ze Button has been pressed!");
+                Log.d("8Ball", "Ze Button has been pressed!");
 
                 Random randomNumberGenerator = new Random();
 
                 int number = randomNumberGenerator.nextInt(5);
 
-                Log.d("eightBall", "The random number is: " + number);
+                Log.d("8Ball", "The random number is: " + number);
 
                  ballDisplay.setImageResource(ballArray[number]);
             }
